@@ -2,7 +2,7 @@
 
 version 1.0.0:
 
-The libaray includes two solvers, gmres and conjudate gradient methods, and two preconditioners, identity and Jocobi preconditioners.
+The library includes two solvers, gmres and conjudate gradient methods, and two preconditioners, identity and Jocobi preconditioners.
 
 # Quick start
 
@@ -48,7 +48,7 @@ To get the number of iterations and error, do
 
 ## Sparse matrix
 
-The krylov-solvers libaray also supports boost.ublas sparse matrix containers.
+The krylov-solvers library also supports boost.ublas sparse matrix containers.
 
     #include <conjugate_gradient.hpp>
     #include <boost/numeric/ublas/matrix_sparse.hpp>
@@ -80,9 +80,9 @@ Solve linear system Ax = b.
     V x(3, 0.0);
     solver(b, x);
 
-## Config solver parameters
+## Configure solver parameters
 
-Each solver class defines a nested struct "param". One way to config solver is to pass a param struct into its constructor. e.g.
+Each solver class defines a nested struct "param". One way to configure solver is to pass a param struct into its constructor. e.g.
 
     typename ublas::gmres<M>::param p;
     p.tol = 1e-8;
@@ -116,7 +116,7 @@ This is a header only library.
 
 ## Requirements
 
-The libarary requires a C++ compiler that supports C++14 and boost.ublas. To build the test, add boost include directory into system path.
+The library requires a C++ compiler that supports C++14 and boost.ublas. To build the test, add boost include directory into system path.
 
 ## TODO list
 
