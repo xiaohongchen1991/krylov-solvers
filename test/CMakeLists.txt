@@ -34,10 +34,10 @@ if (BUILD_TESTS)
 
   include_directories("${CMAKE_CURRENT_SOURCE_DIR}/../include")
 
-  # Link GTest and pthread library
+  # Link GTest library
   add_executable(krylov_solvers_test krylov_solvers_test.cpp)
   target_link_libraries(krylov_solvers_test gtest_main)
 
-  add_test(NAME krylov_solvers COMMAND krylov_solvers_test)
+  add_test(NAME krylov_solvers_test COMMAND krylov_solvers_test)
 
 endif(BUILD_TESTS)

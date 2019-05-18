@@ -7,7 +7,7 @@
 
 namespace ublas=boost::numeric::ublas;
 
-TEST(TestGMRES, FullMatrix)
+TEST(TestGMRES, DenseMatrix)
 {
     using V = ublas::vector<double>;
     using M = ublas::matrix<double>;
@@ -246,7 +246,7 @@ TEST(TestGMRES, JacobiPrecond)
     EXPECT_NEAR(ublas::norm_2(x - sol), 0.0, 1e-6);
 }
 
-TEST(TestCG, FullMatrix)
+TEST(TestCG, DenseMatrix)
 {
     using V = ublas::vector<double>;
     using M = ublas::matrix<double>;
